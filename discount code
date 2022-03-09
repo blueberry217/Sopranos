@@ -1,0 +1,13 @@
+Change discount to 50 percent
+
+$quantity = (int)$cart_product['quantity'];
+$new_product_price = $new_product_price - ($product_price * 0.5 * floor($quantity / 2));
+
+And update the subtotal variable:
+
+$subtotal += $new_product_price;
+
+Add the new code to the "cart.php" and "checkout.php" files. On line 137 in cart.php and line 98 in checkout.php.
+
+
+
